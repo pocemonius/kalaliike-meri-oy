@@ -1,0 +1,99 @@
+.header {   
+    background-color: $colorBlack; 
+    .wrapper {
+        min-height: 100px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+    }
+    &__phone {
+
+        .phone {
+            font-family: $ffRaleway, serif;
+            font-size: 30px;
+            font-weight: 600;
+            line-height: normal;
+            color: $colorWhite;
+            text-decoration: none;
+            transition: .3s;
+            padding-left: 40px;
+            position: relative;
+            &:hover{
+                color: $colorBlue;
+                &:before{
+                    background-image: url(../images/icons/phone-blue.svg);
+                }
+            }
+            &:before{
+                content: "";
+                display: block;
+                width: 30px;
+                height: 30px;
+                background-image: url(../images/icons/phone.svg);
+                background-position: center;
+                background-repeat: no-repeat;
+                position: absolute;
+                left: 0px;
+                top: 5px;
+                transition: .3s;
+            }
+        }
+    }
+    &__logo {
+        position: absolute;
+        top: 10px;
+        left: calc(50% - 134px);
+        .logo {
+            img{
+
+            }
+        }
+    }
+    &__menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .lang{
+            font-family: $ffRaleway, serif;
+            font-size: 30px;
+            font-weight: 600;
+            line-height: normal;
+            color: $colorWhite;
+            text-decoration: none;
+            transition: .3s;
+            margin-right: 40px;
+            padding-right: 30px;
+            position: relative;
+            &:hover{
+                color: $colorBlue;
+                &:after{
+                    border-color: $colorBlue;
+                }
+            }
+            &:after{
+                content: "";
+                display: block;
+                width: 12px;
+                height: 12px;
+                border-bottom: 3px solid $colorWhite;
+                border-left: 3px solid $colorWhite;
+                position: absolute;
+                top: 6px;
+                right: 0px;
+                transform: rotate(-45deg);
+                transition: .3s;
+            }
+        }
+        .menu {
+            &__link {
+                width: 60px;
+                height: 30px;
+                img{
+                    max-width: 100%;
+                    height: auto;
+                }
+            }
+        }
+    }
+}

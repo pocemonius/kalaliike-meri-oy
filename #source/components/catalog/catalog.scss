@@ -1,0 +1,45 @@
+.catalog {
+    background-color: $colorBlack;
+    padding-top: 90px;
+    .wrapper {
+
+    }
+    &__title {
+        color: $colorWhite;
+    }
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-wrap: wrap;
+    }    
+    .product {
+        width: 387px;
+        height: 387px;
+        box-sizing: border-box;
+        border-radius: 20px;
+        border: 2px solid $colorWhite;
+        margin-bottom: 20px;
+        position: relative;
+        overflow: hidden;
+        &__image {
+            width: 100%;
+            height: 100%;
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        &__text {
+            display: none;
+            position: absolute;
+            bottom: 0px;
+            left: 0px;
+            width: 100%;
+        }
+    }
+    .btn {
+
+    }
+}

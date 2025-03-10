@@ -1,0 +1,27 @@
+//fonts
+$ffTheater: 'Theater', sans-serif;
+$ffRaleway: 'Raleway', sans-serif;
+
+
+//colors
+$colorWhite: #fff;
+$colorBlack: #000;
+$colorBlue: #53b5fa;
+
+
+
+//import
+@import "normalize";
+@import "fonts";
+@import "common";
+@import "../../components/header/header.scss";
+@import "../../components/banner/banner.scss";
+@import "../../components/main-slider/main-slider.scss";
+@import "../../components/about-us/about-us.scss";
+@import "../../components/catalog/catalog.scss";
+@import "../../components/footer/footer.scss";
+
+
+
+
+

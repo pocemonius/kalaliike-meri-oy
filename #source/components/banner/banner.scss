@@ -1,0 +1,62 @@
+.banner {    
+    background-image: url(../images/pics/main-bg.png);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: calc(100vh - 100px);
+    &__inner {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+    }
+    &__text {
+        text-align: center;
+        color: $colorWhite;
+        .title {
+            font-family: $ffTheater, serif;
+            font-size: 150px;
+            font-weight: normal;
+            line-height: normal;
+            color: $colorWhite;
+            position: relative;
+            padding-left: 130px;
+            padding-right: 130px;
+            &:before{
+                content: "";
+                display: block;
+                width: 80px;
+                height: 80px;
+                background-image: url(../images/icons/Fish.svg);
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: contain;
+                position: absolute;
+                top: 30px;
+                left: 0px;
+            }
+            &:after{
+                content: "";
+                display: block;
+                width: 80px;
+                height: 80px;
+                background-image: url(../images/icons/Squid.svg);
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: contain;
+                position: absolute;
+                top: 30px;
+                right: 0px;
+            }
+        }
+        .sub-title {
+            font-family: $ffRaleway, serif;
+            font-size: 38px;
+            font-weight: 700;
+            line-height: normal;
+            color: $colorWhite;
+            padding-bottom: 90px;
+
+        }        
+    }
+}

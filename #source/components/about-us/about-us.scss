@@ -1,0 +1,45 @@
+.about-us {
+    padding-top: 70px;
+    padding-bottom: 70px;
+    .wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-wrap: wrap;
+    }
+    &__item {
+        padding: 20px 60px 15px 60px;
+        box-sizing: border-box;
+        text-align: center;
+        width: 33%;
+        margin-bottom: 20px;
+    }
+    &__image {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        width: 100px;
+        height: 100px;
+        img{
+            max-width: 100%;
+            height: auto;
+        }
+    }
+    &__title {
+        color: $colorBlack;
+        font-family: $ffRaleway;
+        font-size: 20px;
+        font-weight: 700;
+        line-height: normal;
+        padding-top: 20px;
+        padding-bottom: 6px;
+        text-transform: uppercase;
+    }
+    &__text {
+        color: $colorBlack;
+        font-family: $ffRaleway;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: normal;
+    }
+}
