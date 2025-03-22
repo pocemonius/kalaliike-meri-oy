@@ -1,11 +1,54 @@
 .catalog {
     background-color: $colorBlack;
     padding-top: 90px;
+    position: relative;
+    &:before{
+        content: "";
+        display: block;
+        width: 365px;
+        height: 275px;
+        position: absolute;
+        left: calc(50% + 450px);
+        top: -110px;
+        background-image: url(../images/pics/bg-crab.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }    
+    &:after{
+        content: "";
+        display: block;
+        width: 300px;
+        height: 300px;
+        position: absolute;
+        right: calc(50% + 450px);
+        bottom: -150px;
+        background-image: url(../images/pics/bg-fish.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
     .wrapper {
-
+        
     }
     &__title {
         color: $colorWhite;
+        span{
+            position: relative;
+            &:before{
+                content: "";
+                display: block;
+                position: absolute;
+                right: calc(100% + 60px);
+                top: -20px;
+                width: 120px;
+                height: 120px;
+                background-image: url(../images/icons/crab.svg);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: contain;
+            }
+        }
     }
     &__wrapper {
         display: flex;
