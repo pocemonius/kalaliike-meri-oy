@@ -316,7 +316,10 @@ template {
     margin: 0 auto;
     padding: 0 20px;
     box-sizing: border-box;
-    outline: 1px solid green;
+}
+
+.no_scroll {
+    overflow: hidden;
 }
 
 h1 {
@@ -331,6 +334,8 @@ h2 {
     font-weight: normal;
     line-height: normal;
     text-align: center;
+    margin: 0;
+    padding: 70px 0px;
 }
 
 .btn {
@@ -441,13 +446,19 @@ h2 {
     transform: rotate(-45deg);
     transition: 0.3s;
 }
-.header__menu .menu__link {
+.header__menu .burger__link {
     width: 60px;
     height: 30px;
 }
-.header__menu .menu__link img {
+.header__menu .burger__link img {
     max-width: 100%;
     height: auto;
+}
+.header__menu .burger__link svg {
+    transition: 0.3s;
+}
+.header__menu .burger__link svg:hover {
+    stroke: #53b5fa;
 }
 
 .banner {
@@ -455,7 +466,7 @@ h2 {
     background-position: center bottom;
     background-repeat: no-repeat;
     background-size: cover;
-    height: calc(100vh - 100px);
+    height: calc(100vh - 95px);
 }
 .banner__inner {
     height: 100%;
@@ -593,7 +604,6 @@ h2 {
 
 .catalog {
     background-color: #000;
-    padding-top: 90px;
     position: relative;
 }
 .catalog:before {
@@ -618,6 +628,22 @@ h2 {
     right: calc(50% + 450px);
     bottom: -150px;
     background-image: url(../images/pics/bg-fish.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.catalog .wrapper {
+    position: relative;
+}
+.catalog .wrapper:after {
+    content: "";
+    display: block;
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    left: calc(100% + 70px);
+    bottom: 350px;
+    background-image: url(../images/icons/Shrimp.svg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -672,4 +698,323 @@ h2 {
     bottom: 0px;
     left: 0px;
     width: 100%;
+}
+.cooking {
+    background-color: #fff;
+    padding-bottom: 150px;
+}
+.cooking__title span {
+    position: relative;
+}
+.cooking__title span:before {
+    content: "";
+    display: block;
+    position: absolute;
+    right: calc(100% + 35px);
+    top: -20px;
+    width: 104px;
+    height: 104px;
+    background-image: url(../images/icons/cooking.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.cooking__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.cooking__col {
+    width: calc(50% - 20px);
+}
+.cooking__sub-title {
+    color: #000;
+    font-family: "Raleway", sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 36px;
+    margin-bottom: 30px;
+    margin-top: 20px;
+    text-transform: uppercase;
+}
+.cooking__text {
+    color: #000;
+    font-family: "Raleway", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 36px;
+}
+.cooking__image {
+    border-radius: 20px;
+    overflow: hidden;
+}
+.cooking__image img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+.review {
+    background-color: #000;
+    color: #fff;
+    padding-top: 1px;
+    position: relative;
+    padding-bottom: 150px;
+}
+.review:before {
+    content: "";
+    display: block;
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    left: calc(50% + 450px);
+    top: -110px;
+    background-image: url(../images/pics/bg-soup.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.review:after {
+    content: "";
+    display: block;
+    width: 400px;
+    height: 330px;
+    position: absolute;
+    right: calc(50% + 450px);
+    bottom: -150px;
+    background-image: url(../images/pics/bg-shrimp.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.review .wrapper {
+    position: relative;
+}
+.review .wrapper:after {
+    content: "";
+    display: block;
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    left: calc(100% + 70px);
+    bottom: 350px;
+    background-image: url(../images/icons/abalone.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.review__title {
+    color: #fff;
+}
+.review__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-wrap: wrap;
+}
+.review__item {
+    width: calc(50% - 10px);
+    border: 2px solid #fff;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    padding: 30px;
+}
+.review__info {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.review__col:nth-child(2) {
+    margin-left: 20px;
+    margin-right: 50px;
+}
+.review__image {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 2px solid #fff;
+    box-sizing: border-box;
+}
+.review__image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+.review__name {
+    color: #fff;
+    font-family: "Raleway", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: uppercase;
+}
+.review__date {
+    color: #fff;
+    font-family: "Raleway", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: normal;
+}
+.review__rating {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.review__rating span {
+    display: block;
+    width: 15px;
+    height: 15px;
+    margin-right: 6px;
+    background-image: url(../images/icons/star.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.review__text {
+    color: #fff;
+    font-family: "Raleway", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.contacts {
+    background-color: #fff;
+    padding-bottom: 150px;
+}
+.contacts__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+}
+.contacts__info {
+    width: 350px;
+    box-sizing: border-box;
+    padding: 30px 0px 30px;
+}
+.contacts__item {
+    margin-bottom: 30px;
+}
+.contacts__sub-title {
+    color: #000;
+    font-family: "Raleway", sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 4px;
+}
+.contacts__text {
+    color: #000;
+    font-family: "Raleway", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: normal;
+}
+.contacts__link {
+    color: #000;
+    font-family: "Raleway", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: normal;
+    text-decoration: none;
+    transition: 0.3s;
+}
+.contacts__link:hover {
+    color: #53b5fa;
+}
+.contacts__socials {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-top: 30px;
+}
+.contacts__social {
+    display: block;
+    width: 40px;
+    height: 40px;
+    margin-right: 20px;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.25);
+    transition: 0.3s;
+}
+.contacts__social:hover {
+    transform: scale(1.1);
+}
+.contacts__map {
+    width: calc(100% - 400px);
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.25);
+}
+
+.footer {
+    background-color: #000;
+}
+.footer .wrapper {
+    padding-top: 14px;
+    padding-bottom: 14px;
+}
+.footer__text {
+    text-align: center;
+    color: #fff;
+    font-family: "Raleway", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.menu {
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background-image: url(../images/pics/menu-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: 999;
+    display: none;
+}
+.menu__close {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+}
+.menu__close svg {
+    transition: 0.3s;
+}
+.menu__close svg:hover {
+    stroke: #53b5fa;
+}
+.menu__content {
+    margin-right: 150px;
+}
+.menu__item {
+    padding-bottom: 16px;
+}
+.menu__link {
+    text-align: right;
+    text-decoration: none;
+    color: #fff;
+    font-family: "Theater", sans-serif;
+    font-size: 50px;
+    font-weight: normal;
+    line-height: normal;
+    position: relative;
+    right: 0px;
+    transition: 0.3s;
+}
+.menu__link:hover {
+    color: #53b5fa;
+    right: 30px;
 }

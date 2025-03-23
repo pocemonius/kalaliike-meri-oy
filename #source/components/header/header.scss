@@ -85,13 +85,19 @@
                 transition: .3s;
             }
         }
-        .menu {
+        .burger {
             &__link {
                 width: 60px;
                 height: 30px;
                 img{
                     max-width: 100%;
                     height: auto;
+                }                
+                svg{            
+                    transition: .3s;
+                    &:hover{
+                        stroke: $colorBlue;
+                    }
                 }
             }
         }

@@ -1,0 +1,15 @@
+.footer {
+    background-color: $colorBlack;
+    .wrapper {
+        padding-top: 14px;
+        padding-bottom: 14px;
+    }
+    &__text {
+        text-align: center;
+        color: $colorWhite;
+        font-family: $ffRaleway;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: normal;
+    }
+}

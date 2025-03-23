@@ -1,6 +1,5 @@
 .catalog {
     background-color: $colorBlack;
-    padding-top: 90px;
     position: relative;
     &:before{
         content: "";
@@ -29,7 +28,20 @@
         background-size: contain;
     }
     .wrapper {
-        
+        position: relative;  
+        &:after{
+            content: "";
+            display: block;
+            width: 150px;
+            height: 150px;
+            position: absolute;
+            left: calc(100% + 70px);
+            bottom: 350px;
+            background-image: url(../images/icons/Shrimp.svg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
     }
     &__title {
         color: $colorWhite;
