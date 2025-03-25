@@ -66,3 +66,63 @@
 
     }
 }
+
+
+
+@media screen and (max-width: 900px) {
+    .cooking {
+        padding-bottom: 50px;
+        .wrapper {
+    
+        }
+        &__title {        
+            span{
+                
+                &:before{
+                    right: calc(100% + 25px);
+                    top: -15px;
+                    width: 60px;
+                    height: 60px;
+                    display: none;
+                }
+            }
+        }
+        &__wrapper {
+            flex-direction: column;
+        }
+        &__col {
+            width: 100%;
+        }
+        &__descr {
+    
+        }
+        &__sub-title {
+            font-size: 20px;
+            margin-bottom: 10px;
+            margin-top: 0;
+            line-height: 28px;
+        }
+        &__text {
+            font-size: 16px;
+            line-height: 28px;
+        }
+        &__image {
+            margin-top: 30px;
+            img{
+                
+            }
+        }
+        &__img{
+            display: inline-flex;
+            overflow: hidden;
+            border-radius: 20px;
+        }
+        &__slider {
+    
+        }
+        &__item {
+            display: flex;
+            justify-content: center;
+        }
+    }
+}

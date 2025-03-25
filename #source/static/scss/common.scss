@@ -4,6 +4,11 @@
     padding: 0 20px;
     box-sizing: border-box;
 }
+@media screen and (max-width: 900px){
+    .wrapper{
+        padding: 0 15px;
+    }
+}
 .no_scroll{
     overflow: hidden;
 }
@@ -20,6 +25,12 @@ h2{
     text-align: center;
     margin: 0;
     padding: 70px 0px;
+}
+@media screen and (max-width: 900px){
+    h2{
+        font-size: 50px;
+        padding: 30px 0;
+    }
 }
 h3{
     
@@ -47,6 +58,17 @@ h3{
         &:hover{
             color: $colorBlue;
             border-color: $colorBlue;
+        }
+    }
+}
+@media screen and (max-width: 900px){
+    .btn{
+        padding-top: 30px;
+        padding-bottom: 20px;
+        a{
+            width: 100%;
+            max-width: 300px;
+            font-size: 18px;
         }
     }
 }
